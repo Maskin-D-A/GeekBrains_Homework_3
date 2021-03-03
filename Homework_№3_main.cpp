@@ -14,11 +14,11 @@ void second_mission(){
 	std::cout << ((number < 21) ? number - 21 : 2*(number - 21)) << '\n';
 }
 
-void third_mission(){
-	int array[3][3][3] = {{1,2,3}, {4,5,6}, {7,8,9}};
-	int *ar = &array[0][0][0];
+int array[3][3][3] = {{{1,2,3}, {4,5,6}, {7,8,9}},
+		     {{11,22,33}, {44,55,66}, {77,88,99}},
+		     {{111,222,333}, {444,555,696}, {777,888,999}}};
+	int *ar = &array[1][1][1];
 	std:: cout << *ar;
-}
 
 
 int main(){
